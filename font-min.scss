@@ -57,7 +57,7 @@ $screenMaxFont: (1024: 22,
 // 利用媒体查询进行缩放
 @each $ssKey,
 $ssValue in $screenSize {
-  @media screen and (min-width: ($ssKey + "px")) and (max-width: ($ssValue + "px")) {
+  @media only screen and (min-width: ($ssKey + "px")) and (max-width: ($ssValue + "px")) {
     @each $fs in $fontSize {
       @each $scKey,
       $scValue in $scaleCenter {

@@ -1,396 +1,380 @@
 .fs-12-lt, .fs-12-lc, .fs-12-cc, .fs-13-lt, .fs-13-lc, .fs-13-cc, .fs-14-lt, .fs-14-lc, .fs-14-cc, .fs-15-lt, .fs-15-lc, .fs-15-cc, .fs-16-lt, .fs-16-lc, .fs-16-cc, .fs-17-lt, .fs-17-lc, .fs-17-cc, .fs-18-lt, .fs-18-lc, .fs-18-cc, .fs-19-lt, .fs-19-lc, .fs-19-cc, .fs-20-lt, .fs-20-lc, .fs-20-cc, .fs-21-lt, .fs-21-lc, .fs-21-cc, .fs-22-lt, .fs-22-lc, .fs-22-cc {
   position: relative;
 }
-
 .fs-12-lt::before, .fs-12-lc::before, .fs-12-cc::before, .fs-13-lt::before, .fs-13-lc::before, .fs-13-cc::before, .fs-14-lt::before, .fs-14-lc::before, .fs-14-cc::before, .fs-15-lt::before, .fs-15-lc::before, .fs-15-cc::before, .fs-16-lt::before, .fs-16-lc::before, .fs-16-cc::before, .fs-17-lt::before, .fs-17-lc::before, .fs-17-cc::before, .fs-18-lt::before, .fs-18-lc::before, .fs-18-cc::before, .fs-19-lt::before, .fs-19-lc::before, .fs-19-cc::before, .fs-20-lt::before, .fs-20-lc::before, .fs-20-cc::before, .fs-21-lt::before, .fs-21-lc::before, .fs-21-cc::before, .fs-22-lt::before, .fs-22-lc::before, .fs-22-cc::before {
   content: attr(data-text);
   top: 0;
   left: 0;
   width: 100%;
 }
-
 .fs-12-lt::before, .fs-12-lc::before, .fs-12-cc::before {
   font-size: 0.12rem;
 }
-
 .fs-13-lt::before, .fs-13-lc::before, .fs-13-cc::before {
   font-size: 0.13rem;
 }
-
 .fs-14-lt::before, .fs-14-lc::before, .fs-14-cc::before {
   font-size: 0.14rem;
 }
-
 .fs-15-lt::before, .fs-15-lc::before, .fs-15-cc::before {
   font-size: 0.15rem;
 }
-
 .fs-16-lt::before, .fs-16-lc::before, .fs-16-cc::before {
   font-size: 0.16rem;
 }
-
 .fs-17-lt::before, .fs-17-lc::before, .fs-17-cc::before {
   font-size: 0.17rem;
 }
-
 .fs-18-lt::before, .fs-18-lc::before, .fs-18-cc::before {
   font-size: 0.18rem;
 }
-
 .fs-19-lt::before, .fs-19-lc::before, .fs-19-cc::before {
   font-size: 0.19rem;
 }
-
 .fs-20-lt::before, .fs-20-lc::before, .fs-20-cc::before {
   font-size: 0.2rem;
 }
-
 .fs-21-lt::before, .fs-21-lc::before, .fs-21-cc::before {
   font-size: 0.21rem;
 }
-
 .fs-22-lt::before, .fs-22-lc::before, .fs-22-cc::before {
   font-size: 0.22rem;
 }
-
-@media screen and (min-width: 0px) and (max-width: 1024px) {
+@media only screen and (min-width: 0px) and (max-width: 1024px) {
   .fs-12-lt::before {
     position: absolute;
-    transform: scale(0.53333);
+    transform: scale(6.4/12);
     transform-origin: 0% 0%;
   }
   .fs-12-lc::before {
     position: absolute;
-    transform: scale(0.53333);
+    transform: scale(6.4/12);
     transform-origin: 0% 50%;
   }
   .fs-12-cc::before {
     position: absolute;
-    transform: scale(0.53333);
+    transform: scale(6.4/12);
     transform-origin: 50% 50%;
   }
   .fs-13-lt::before {
     position: absolute;
-    transform: scale(0.57778);
+    transform: scale(6.9333333333/12);
     transform-origin: 0% 0%;
   }
   .fs-13-lc::before {
     position: absolute;
-    transform: scale(0.57778);
+    transform: scale(6.9333333333/12);
     transform-origin: 0% 50%;
   }
   .fs-13-cc::before {
     position: absolute;
-    transform: scale(0.57778);
+    transform: scale(6.9333333333/12);
     transform-origin: 50% 50%;
   }
   .fs-14-lt::before {
     position: absolute;
-    transform: scale(0.62222);
+    transform: scale(7.4666666667/12);
     transform-origin: 0% 0%;
   }
   .fs-14-lc::before {
     position: absolute;
-    transform: scale(0.62222);
+    transform: scale(7.4666666667/12);
     transform-origin: 0% 50%;
   }
   .fs-14-cc::before {
     position: absolute;
-    transform: scale(0.62222);
+    transform: scale(7.4666666667/12);
     transform-origin: 50% 50%;
   }
   .fs-15-lt::before {
     position: absolute;
-    transform: scale(0.66667);
+    transform: scale(8/12);
     transform-origin: 0% 0%;
   }
   .fs-15-lc::before {
     position: absolute;
-    transform: scale(0.66667);
+    transform: scale(8/12);
     transform-origin: 0% 50%;
   }
   .fs-15-cc::before {
     position: absolute;
-    transform: scale(0.66667);
+    transform: scale(8/12);
     transform-origin: 50% 50%;
   }
   .fs-16-lt::before {
     position: absolute;
-    transform: scale(0.71111);
+    transform: scale(8.5333333333/12);
     transform-origin: 0% 0%;
   }
   .fs-16-lc::before {
     position: absolute;
-    transform: scale(0.71111);
+    transform: scale(8.5333333333/12);
     transform-origin: 0% 50%;
   }
   .fs-16-cc::before {
     position: absolute;
-    transform: scale(0.71111);
+    transform: scale(8.5333333333/12);
     transform-origin: 50% 50%;
   }
   .fs-17-lt::before {
     position: absolute;
-    transform: scale(0.75556);
+    transform: scale(9.0666666667/12);
     transform-origin: 0% 0%;
   }
   .fs-17-lc::before {
     position: absolute;
-    transform: scale(0.75556);
+    transform: scale(9.0666666667/12);
     transform-origin: 0% 50%;
   }
   .fs-17-cc::before {
     position: absolute;
-    transform: scale(0.75556);
+    transform: scale(9.0666666667/12);
     transform-origin: 50% 50%;
   }
   .fs-18-lt::before {
     position: absolute;
-    transform: scale(0.8);
+    transform: scale(9.6/12);
     transform-origin: 0% 0%;
   }
   .fs-18-lc::before {
     position: absolute;
-    transform: scale(0.8);
+    transform: scale(9.6/12);
     transform-origin: 0% 50%;
   }
   .fs-18-cc::before {
     position: absolute;
-    transform: scale(0.8);
+    transform: scale(9.6/12);
     transform-origin: 50% 50%;
   }
   .fs-19-lt::before {
     position: absolute;
-    transform: scale(0.84444);
+    transform: scale(10.1333333333/12);
     transform-origin: 0% 0%;
   }
   .fs-19-lc::before {
     position: absolute;
-    transform: scale(0.84444);
+    transform: scale(10.1333333333/12);
     transform-origin: 0% 50%;
   }
   .fs-19-cc::before {
     position: absolute;
-    transform: scale(0.84444);
+    transform: scale(10.1333333333/12);
     transform-origin: 50% 50%;
   }
   .fs-20-lt::before {
     position: absolute;
-    transform: scale(0.88889);
+    transform: scale(10.6666666667/12);
     transform-origin: 0% 0%;
   }
   .fs-20-lc::before {
     position: absolute;
-    transform: scale(0.88889);
+    transform: scale(10.6666666667/12);
     transform-origin: 0% 50%;
   }
   .fs-20-cc::before {
     position: absolute;
-    transform: scale(0.88889);
+    transform: scale(10.6666666667/12);
     transform-origin: 50% 50%;
   }
   .fs-21-lt::before {
     position: absolute;
-    transform: scale(0.93333);
+    transform: scale(11.2/12);
     transform-origin: 0% 0%;
   }
   .fs-21-lc::before {
     position: absolute;
-    transform: scale(0.93333);
+    transform: scale(11.2/12);
     transform-origin: 0% 50%;
   }
   .fs-21-cc::before {
     position: absolute;
-    transform: scale(0.93333);
+    transform: scale(11.2/12);
     transform-origin: 50% 50%;
   }
   .fs-22-lt::before {
     position: absolute;
-    transform: scale(0.97778);
+    transform: scale(11.7333333333/12);
     transform-origin: 0% 0%;
   }
   .fs-22-lc::before {
     position: absolute;
-    transform: scale(0.97778);
+    transform: scale(11.7333333333/12);
     transform-origin: 0% 50%;
   }
   .fs-22-cc::before {
     position: absolute;
-    transform: scale(0.97778);
+    transform: scale(11.7333333333/12);
     transform-origin: 50% 50%;
   }
 }
-
-@media screen and (min-width: 1025px) and (max-width: 1280px) {
+@media only screen and (min-width: 1025px) and (max-width: 1280px) {
   .fs-12-lt::before {
     position: absolute;
-    transform: scale(0.66667);
+    transform: scale(8/12);
     transform-origin: 0% 0%;
   }
   .fs-12-lc::before {
     position: absolute;
-    transform: scale(0.66667);
+    transform: scale(8/12);
     transform-origin: 0% 50%;
   }
   .fs-12-cc::before {
     position: absolute;
-    transform: scale(0.66667);
+    transform: scale(8/12);
     transform-origin: 50% 50%;
   }
   .fs-13-lt::before {
     position: absolute;
-    transform: scale(0.72222);
+    transform: scale(8.6666666667/12);
     transform-origin: 0% 0%;
   }
   .fs-13-lc::before {
     position: absolute;
-    transform: scale(0.72222);
+    transform: scale(8.6666666667/12);
     transform-origin: 0% 50%;
   }
   .fs-13-cc::before {
     position: absolute;
-    transform: scale(0.72222);
+    transform: scale(8.6666666667/12);
     transform-origin: 50% 50%;
   }
   .fs-14-lt::before {
     position: absolute;
-    transform: scale(0.77778);
+    transform: scale(9.3333333333/12);
     transform-origin: 0% 0%;
   }
   .fs-14-lc::before {
     position: absolute;
-    transform: scale(0.77778);
+    transform: scale(9.3333333333/12);
     transform-origin: 0% 50%;
   }
   .fs-14-cc::before {
     position: absolute;
-    transform: scale(0.77778);
+    transform: scale(9.3333333333/12);
     transform-origin: 50% 50%;
   }
   .fs-15-lt::before {
     position: absolute;
-    transform: scale(0.83333);
+    transform: scale(10/12);
     transform-origin: 0% 0%;
   }
   .fs-15-lc::before {
     position: absolute;
-    transform: scale(0.83333);
+    transform: scale(10/12);
     transform-origin: 0% 50%;
   }
   .fs-15-cc::before {
     position: absolute;
-    transform: scale(0.83333);
+    transform: scale(10/12);
     transform-origin: 50% 50%;
   }
   .fs-16-lt::before {
     position: absolute;
-    transform: scale(0.88889);
+    transform: scale(10.6666666667/12);
     transform-origin: 0% 0%;
   }
   .fs-16-lc::before {
     position: absolute;
-    transform: scale(0.88889);
+    transform: scale(10.6666666667/12);
     transform-origin: 0% 50%;
   }
   .fs-16-cc::before {
     position: absolute;
-    transform: scale(0.88889);
+    transform: scale(10.6666666667/12);
     transform-origin: 50% 50%;
   }
   .fs-17-lt::before {
     position: absolute;
-    transform: scale(0.94444);
+    transform: scale(11.3333333333/12);
     transform-origin: 0% 0%;
   }
   .fs-17-lc::before {
     position: absolute;
-    transform: scale(0.94444);
+    transform: scale(11.3333333333/12);
     transform-origin: 0% 50%;
   }
   .fs-17-cc::before {
     position: absolute;
-    transform: scale(0.94444);
+    transform: scale(11.3333333333/12);
     transform-origin: 50% 50%;
   }
 }
-
-@media screen and (min-width: 1281px) and (max-width: 1440px) {
+@media only screen and (min-width: 1281px) and (max-width: 1440px) {
   .fs-12-lt::before {
     position: absolute;
-    transform: scale(0.75);
+    transform: scale(9/12);
     transform-origin: 0% 0%;
   }
   .fs-12-lc::before {
     position: absolute;
-    transform: scale(0.75);
+    transform: scale(9/12);
     transform-origin: 0% 50%;
   }
   .fs-12-cc::before {
     position: absolute;
-    transform: scale(0.75);
+    transform: scale(9/12);
     transform-origin: 50% 50%;
   }
   .fs-13-lt::before {
     position: absolute;
-    transform: scale(0.8125);
+    transform: scale(9.75/12);
     transform-origin: 0% 0%;
   }
   .fs-13-lc::before {
     position: absolute;
-    transform: scale(0.8125);
+    transform: scale(9.75/12);
     transform-origin: 0% 50%;
   }
   .fs-13-cc::before {
     position: absolute;
-    transform: scale(0.8125);
+    transform: scale(9.75/12);
     transform-origin: 50% 50%;
   }
   .fs-14-lt::before {
     position: absolute;
-    transform: scale(0.875);
+    transform: scale(10.5/12);
     transform-origin: 0% 0%;
   }
   .fs-14-lc::before {
     position: absolute;
-    transform: scale(0.875);
+    transform: scale(10.5/12);
     transform-origin: 0% 50%;
   }
   .fs-14-cc::before {
     position: absolute;
-    transform: scale(0.875);
+    transform: scale(10.5/12);
     transform-origin: 50% 50%;
   }
   .fs-15-lt::before {
     position: absolute;
-    transform: scale(0.9375);
+    transform: scale(11.25/12);
     transform-origin: 0% 0%;
   }
   .fs-15-lc::before {
     position: absolute;
-    transform: scale(0.9375);
+    transform: scale(11.25/12);
     transform-origin: 0% 50%;
   }
   .fs-15-cc::before {
     position: absolute;
-    transform: scale(0.9375);
+    transform: scale(11.25/12);
     transform-origin: 50% 50%;
   }
 }
-
-@media screen and (min-width: 1441px) and (max-width: 1800px) {
+@media only screen and (min-width: 1441px) and (max-width: 1800px) {
   .fs-12-lt::before {
     position: absolute;
-    transform: scale(0.9375);
+    transform: scale(11.25/12);
     transform-origin: 0% 0%;
   }
   .fs-12-lc::before {
     position: absolute;
-    transform: scale(0.9375);
+    transform: scale(11.25/12);
     transform-origin: 0% 50%;
   }
   .fs-12-cc::before {
     position: absolute;
-    transform: scale(0.9375);
+    transform: scale(11.25/12);
     transform-origin: 50% 50%;
   }
 }
