@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>浏览器最小字体限制解决方案</title>
+  <link rel="stylesheet" href="./font-min.min.css">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body, p, h5 {
+      margin: 0;
+      padding: 0;
+      font-size: 16px;
+    }
+    body {
+      padding: 0.2rem;
+    }
+    .demo {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 0.4rem;
+    }
+    .box {
+      flex: 1 0 auto;
+      border-radius: 0.2rem;
+      box-shadow: 0 0 0.1rem rgba(0, 0, 0, .3);
+      padding: 0.2rem;
+      margin-right: 0.4rem;
+      margin-bottom: 0.4rem;
+      min-width: 1.4rem;
+      max-width: 45%;
+    }
+    .box > div {
+      margin-bottom: 0.15rem;
+    }
+    .box > div > h5{
+      font-size: 0.16rem;
+      margin-bottom: 0.05rem;
+    }
+    .box > div > pre {
+      background-color: #1f1f1f;
+      border-radius: 0.05rem;
+      font-size: 0.14rem;
+      color: #fff;
+      padding: 0.1rem;
+    }
+    .box > div > button {
+      border-radius: 0.5rem;
+      background-color: cadetblue;
+      color: #fff;
+      width: 0.95rem;
+      height: 0.2rem;
+      line-height: 0.2rem;
+      text-align: center;
+      flex: 0 0 auto;
+      border: none;
+      box-shadow: 0rem 0.05rem 0.01rem #3d6769;
+      transition: all .15s linear;
+    }
+    .box > div > button:active {
+      transform: translateY(0.05rem);
+      box-shadow: none;
+      transition: all .15s linear;
+    }
+  </style>
+</head>
+<body>
+  <h3 id="screen">当前屏幕宽度：1920px</h3>
+  <div class="demo">
+    <div class="box">
+      <div>
+        <h5>不使用缩放：</h5>
+        <pre>
+&lt;button style=&quot;font-size: 0.16rem;&quot;&gt;我是按钮&lt;/button&gt;
+
+.button {
+  width: 0.95rem;
+  height: 0.2rem;
+  line-height: 0.2rem;
+}</pre>
+      </div>
+      <div>
+        <h5>在1024px屏幕上显示字体过大引起错位：</h5>
+        <button style="font-size: 0.16rem;">我是按钮</button>
+      </div>
+    </div>
+    <div class="box">
+      <div>
+        <h5>使用缩放：</h5>
+        <pre>
+&lt;button class=&quot;fs-16-cc&quot; data-text=&quot;我是按钮&quot;&gt;&lt;/button&gt;
+
+.button {
+  width: 0.95rem;
+  height: 0.2rem;
+  line-height: 0.2rem;
+}</pre>
+      </div>
+      <div>
+        <h5>正常显示：</h5>
+        <button class="fs-16-cc" data-text="我是按钮"></button>
+      </div>
+    </div>
+  </div>
+</body>
+<script>
+  const baseFontSize = 100;
+  const uiWidth = 1920;
+  function setRem() {
+    const fontSize = baseFontSize * (window.screen.width / uiWidth);
+    document.documentElement.style.fontSize = fontSize + "px";
+    document.getElementById('screen').innerText = `请按F12调试不同尺寸设备，当前浏览器宽度：${window.screen.width}px`;
+  }
+  setRem();
+</script>
+</html>

@@ -1,0 +1,74 @@
+// 设计稿宽度尺寸，默认1920px
+$uiWidth: 1920;
+
+// 根元素html的基准字号，默认100px
+$baseFontSize: 100;
+
+// 浏览器显示的最小字号，默认12px
+$fontMin: 12;
+
+// 缩放中心，如lt(left-top)代表左上角原点缩放
+$scaleCenter: ("lt": 0% 0%,
+  "lc": 0% 50%,
+  "cc": 50% 50%);
+
+// 屏幕尺寸，如0: 1024代表0px~1024px的屏幕
+$screenSize: (0: 1024, 1025: 1280, 1281: 1440, 1441: 1800);
+
+// 需要缩放的字号集合
+$fontSize: (12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22);
+
+// 不同屏幕尺寸对应的需缩放的最大字号，如在1024屏幕中，≤22px的字体都要缩放
+$screenMaxFont: (1024: 22,
+  1280: 17,
+  1440: 15,
+  1800: 12);
+
+// 父元素共享属性
+%share {
+  position: relative;
+}
+
+// 伪元素共享属性
+%shareBefore {
+  content: attr(data-text);
+  top: 0;
+  left: 0;
+  width: 100%
+}
+
+// 字号
+@each $fs in $fontSize {
+  %shareFs#{$fs} {
+    font-size: $fs*(1/$baseFontSize)*1rem;
+  }
+  @each $scKey,
+  $scValue in $scaleCenter {
+    .fs-#{$fs}-#{$scKey} {
+      @extend %share;
+      &::before {
+        @extend %shareBefore;
+        @extend %shareFs#{$fs};
+      }
+    }
+  }
+}
+
+// 利用媒体查询进行缩放
+@each $ssKey,
+$ssValue in $screenSize {
+  @media screen and (min-width: ($ssKey + "px")) and (max-width: ($ssValue + "px")) {
+    @each $fs in $fontSize {
+      @each $scKey,
+      $scValue in $scaleCenter {
+        @if ($fs <=map-get($screenMaxFont, $ssValue)) {
+          .fs-#{$fs}-#{$scKey}::before {
+            position: absolute;
+            transform: scale($fs/$uiWidth*$ssValue/$fontMin);
+            transform-origin: $scValue;
+          }
+        }
+      }
+    }
+  }
+}
